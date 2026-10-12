@@ -1,0 +1,127 @@
+/* Desktop content stays expanded; phones show the essentials first. */
+.mobile-extras>summary{display:none}
+@media(max-width:800px){
+ .edition .terrain-lines,.edition .hero-top,.edition .hero-foot,.edition .manifesto-side,
+ .edition .landscape-caption,.edition .booking-intro .label,
+ .edition .section-index,.edition .manifesto h2,
+ .edition .lab-heading>.label,.edition .lab-heading>p,
+ .edition .lab-description,.edition .lab-spec,
+ .edition .stays .section-heading .label,
+ .edition .cabin-body:before,.edition .cabin-description,
+ .edition .cabin-photo .badge,.edition .included-note,
+ .edition .day-builder-heading>.label,.edition .day-builder-heading>p,
+ .edition .day-builder-photo,.edition .landscape-divider,.edition .gallery-section,
+ .edition .map-copy>.label,.edition .faq-section .label,
+ .edition .final-invite>.wrap>.label,.edition .invite-action p,.edition .final-meta{display:none}
+ .edition .layered-hero{gap:22px;padding-top:24px;padding-bottom:0}
+ .edition .layer-copy p{max-width:320px;margin-block:16px;font-size:14px;line-height:1.65}
+ .edition .layer-copy p br{display:none}
+ .edition .layered-hero .layer-landscape{height:320px;border-radius:120px 120px 14px 14px}
+ .edition .booking-wrap{padding-top:28px}
+ .edition .booking-bar{padding:20px;gap:18px 14px;border-radius:14px;box-shadow:none}
+ .edition .booking-intro strong{font-size:22px}
+ .edition .manifesto{padding-block:30px}
+ .edition .manifesto-bottom{margin:0}
+ .edition .manifesto-bottom p{font-size:14px;line-height:1.75;max-width:440px}
+ .edition .manifesto-bottom p br{display:none}
+ .edition .build-journey{height:175svh;margin-top:28px}
+ .edition .build-brand{display:none}
+ .edition .build-top{justify-content:flex-end}
+ .edition .build-copy h2{font-size:32px}
+ .edition .build-copy p{font-size:12px}
+ .edition .build-caption p{display:none}
+ .edition .build-caption{min-height:58px;align-items:center;padding:12px 14px}
+ .edition .build-caption h3{font-size:16px}
+ .edition .architecture-lab{padding-block:36px}
+ .edition .lab-heading{margin-bottom:22px}
+ .edition .lab-heading h2{font-size:35px}
+ .edition .lab-layout{gap:16px}
+ .edition .lab-house-tabs>.house-choice{gap:9px;padding-bottom:12px}
+ .edition .lab-house-tabs>.house-choice>img{height:76px}
+ .edition .lab-house-tabs>.house-choice>.house-choice-arrow{bottom:10px}
+ .edition .lab-stage{height:clamp(340px,95vw,460px)}
+ .edition .lab-house-link{padding:8px 0}
+ .edition .mobile-extras{margin-top:18px;border-bottom:1px solid var(--lab-line)}
+ .edition .mobile-extras>summary{display:flex;align-items:center;justify-content:space-between;gap:18px;list-style:none;min-height:54px;font-size:14px;color:var(--lab-ink);cursor:pointer}
+ .edition .mobile-extras>summary::-webkit-details-marker{display:none}
+ .edition .mobile-extras>summary>span{font-size:22px;font-weight:400}
+ .edition .mobile-extras[open]>summary>span{transform:rotate(45deg)}
+ .edition .mobile-extras .lab-zones{margin:0;padding:4px 0 18px;border:0}
+ .edition .mobile-extras .mobile-control-hint{display:none}
+ .edition .mobile-extras summary:focus-visible{outline:2px solid var(--lab-active);outline-offset:3px}
+ .edition .stays{padding-block:40px;border-radius:0}
+ .edition .stays .section-heading h2{font-size:34px;line-height:1.12}
+ .edition .stays .section-heading{margin-bottom:20px}
+ .edition .stays .compare-trigger{margin-top:15px;min-height:44px}
+ .edition .cabins-toolbar{margin-bottom:20px}
+ .edition #availability-note{font-size:12px;line-height:1.6}
+ .edition .cabin-grid{gap:36px}
+ .edition .cabin-card{gap:18px}
+ .edition .cabin-photo,.edition .cabin-card:nth-child(2) .cabin-photo{height:300px;border-radius:16px;box-shadow:none}
+ .edition .cabin-body{padding:0}
+ .edition .cabin-title-row h3{font-size:32px;letter-spacing:-1px}
+ .edition .cabin-meta{margin-top:12px;gap:12px;font-size:12px}
+ .edition .cabin-bottom{margin-top:18px;padding-top:16px}
+ .edition .cabin-price strong{font-size:25px}
+ .edition .day-builder:before{display:none}
+ .edition .is-revealed{animation:none}
+ .edition .faq-section h2 br{display:block}
+ .edition .day-builder{display:block;padding-block:40px}
+ .edition .day-builder h2{font-size:34px}
+ .edition .mood-tabs{margin-block:20px;gap:8px}
+ .edition .mood-tabs button{font-size:12px;flex:1 1 90px;padding:10px 6px;min-height:46px}
+ .edition .day-plan{margin-bottom:16px}
+ .edition .day-plan p{font-size:14px;line-height:1.6}
+ .edition .map-section{padding-block:40px;gap:24px}
+ .edition .map-copy h2,.edition .faq-section h2{font-size:34px}
+ .edition .map-copy>p{font-size:14px;line-height:1.65}
+ .edition .coordinates{margin-block:22px}
+ .edition .map-panel iframe{height:300px}
+ .edition .faq-section{padding-block:36px;gap:18px}
+ .edition .faq-list summary{font-size:15px;min-height:56px;padding-block:16px}
+ .edition .final-invite{padding:32px 0;border-radius:20px 20px 0 0}
+ .edition .final-invite:before{display:none}
+ .edition .final-invite .invite-layout{margin:0;gap:22px}
+ .edition .final-invite .invite-layout h2{font-size:36px}
+ .edition .footer{padding-block:24px}
+ .edition .footer .brand{font-size:34px}
+}
+@media(max-width:360px){
+ .edition .layered-hero .layer-landscape{height:270px}
+ .edition .lab-heading h2{font-size:30px}
+ .edition .lab-house-tabs>.house-choice>img{height:65px}
+ .edition .cabin-photo,.edition .cabin-card:nth-child(2) .cabin-photo{height:250px}
+ .edition .cabin-meta{font-size:11px;gap:10px}
+ .edition .final-invite .invite-layout h2{font-size:31px}
+}
+@media(max-width:800px) and (prefers-reduced-motion:reduce){.edition .build-journey{height:auto}}
+
+/* One quiet, immersive opening screen on phones. */
+.hero-location,.hero-mobile-intro{display:none}
+@media(max-width:800px){
+ .edition .layered-hero{width:100%;height:calc(100svh - var(--header-height));min-height:580px;max-height:820px;margin:0;padding:0;display:block;overflow:hidden;background:#263d33;isolation:isolate}
+ .edition .layered-hero .layer-landscape{position:absolute;inset:0;width:100%;height:100%;border-radius:0;box-shadow:none;z-index:-1;transform:none;animation:none}
+ .edition .layered-hero .layer-landscape>img{object-position:72% center;transform:none;filter:saturate(.85);border-radius:0}
+ .edition .layer-landscape:after{inset:0;background:linear-gradient(180deg,#122a32ba 0%,#122a324d 35%,transparent 55%,#122a3255 78%,#122a32b3 100%)}
+ .edition .hero-location{display:block;position:absolute;top:28px;left:24px;z-index:2;color:#fbf7ec;font-size:9px;font-weight:500;letter-spacing:1.5px}
+ .edition .layer-copy{position:absolute;inset:64px 24px 28px;width:auto;display:flex;flex-direction:column;align-items:flex-start;z-index:2;padding:0}
+ .edition .layered-hero h1{font-size:clamp(54px,13.6vw,80px);line-height:1.02;letter-spacing:-.06em;color:#fffaf0;margin:0;text-shadow:0 2px 24px #17251d24}
+ .edition .layered-hero h1 em{font-size:.81em;color:#f0d8b4;letter-spacing:-.055em;text-shadow:none;white-space:nowrap}
+ .edition .layer-copy p{margin:18px 0 auto;color:#f4f4e7;font-size:14px;line-height:1.6;max-width:290px}
+ .edition .hero-desktop-intro{display:none}
+ .edition .hero-mobile-intro{display:inline}
+ .edition .layer-copy p .hero-mobile-intro br{display:initial}
+ .edition .layer-main-link{display:flex;justify-content:space-between;align-items:center;min-height:54px;width:100%;padding:15px 20px;border:1px solid #f8efdc;border-radius:12px;background:#f8efdc;color:#293d32;font-size:15px;font-weight:500;box-shadow:0 6px 24px #12221a1a;margin-top:24px}
+ .edition .layer-main-link>span{font-size:24px}
+ .edition .layer-landscape .image-note{writing-mode:horizontal-tb;left:24px;right:auto;bottom:7px;font-size:6px;color:#fff9;letter-spacing:.5px}
+ .edition .booking-wrap{padding-top:24px}
+ .edition #reservation-dialog{width:calc(100% - 24px);max-height:calc(100svh - 24px);padding:38px 20px 24px;border-radius:18px}
+ .edition #reservation-dialog .reservation-top{margin-block:20px}
+ .edition #reservation-dialog .reservation-fields input,.edition #reservation-dialog .reservation-fields select,.edition #reservation-dialog .reservation-fields textarea{font-size:16px;min-height:46px;min-width:0}
+}
+@media(max-width:360px){
+ .edition .hero-location{left:20px;font-size:8px}
+ .edition .layer-copy{left:20px;right:20px;top:62px}
+ .edition .layered-hero h1{font-size:50px}
+ .edition .layer-copy p{font-size:13px}
+}

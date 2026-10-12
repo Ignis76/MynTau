@@ -1,0 +1,47 @@
+/* The preview selector is an explicit action, separate from the cabin list. */
+.edition .cabins-toolbar{border:0;margin-bottom:32px;padding:0;justify-content:flex-start}
+.edition #availability-note{text-align:left}
+.edition .lab-controls>.mobile-control-hint{display:block;font-size:13px;line-height:1.5;letter-spacing:0;color:#c6d0bc;margin:0 0 14px}
+.edition .lab-house-tabs{display:grid;gap:12px;border:0;padding:0;background:transparent;border-radius:0}
+.edition .lab-house-tabs>.house-choice{display:grid;grid-template-columns:84px minmax(0,1fr) 34px;gap:18px;width:100%;min-height:118px;padding:13px;text-align:left;align-items:center;border:1px solid #a1b39466;border-radius:16px;background:#ffffff05;color:#f1efdf;box-shadow:none;cursor:pointer;transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}
+.edition .lab-house-tabs>.house-choice>img{width:84px;height:88px;object-fit:cover;border-radius:9px;filter:saturate(.75);pointer-events:none}
+.edition .lab-house-tabs>.house-choice>.house-choice-copy{display:flex;flex-direction:column;gap:7px;min-width:0;font-size:inherit;letter-spacing:0;line-height:1.2}
+.edition .house-choice-copy strong{font-size:26px;font-weight:500;letter-spacing:-.8px}
+.edition .lab-house-tabs>.house-choice em{font:400 12px/1.4 Onest,Arial,sans-serif;color:inherit;opacity:.75;margin:0;letter-spacing:0}
+.edition .house-choice-state{font-size:12px;line-height:1.4;color:#e5be99;margin-top:5px;font-weight:500}
+.edition .lab-house-tabs>.house-choice>.house-choice-arrow{display:grid;place-items:center;width:34px;height:34px;border:1px solid #a7ba9470;border-radius:50%;font-size:20px;line-height:1;letter-spacing:0;color:inherit}
+.edition .lab-house-tabs>.house-choice.active{background:#f0e6d4;color:#2d4133;border-color:#f0e6d4;box-shadow:0 8px 24px #10251b15}
+.edition .house-choice.active .house-choice-state{color:#566b50}
+.edition .lab-house-tabs>.house-choice.active>.house-choice-arrow{background:#2c4636;color:#fff8e9;border-color:#2c4636;font-size:16px}
+.edition .lab-house-tabs>.house-choice:focus-visible{outline:3px solid #dca47c;outline-offset:4px}
+@media(hover:hover){
+ .edition .lab-house-tabs>.house-choice:hover:not(.active){background:#ffffff10;border-color:#dec2a1;transform:translateY(-2px);box-shadow:0 8px 22px #10251b1a}
+}
+@media(min-width:801px) and (max-width:1150px){
+ .edition .lab-house-tabs>.house-choice{grid-template-columns:60px minmax(0,1fr) 28px;gap:12px;padding:12px}
+ .edition .lab-house-tabs>.house-choice>img{width:60px;height:80px}
+ .edition .house-choice-copy strong{font-size:22px}
+ .edition .lab-house-tabs>.house-choice>.house-choice-arrow{width:28px;height:28px}
+}
+@media(max-width:800px){
+ .edition .lab-controls>.mobile-control-hint{color:var(--lab-muted);font-size:12px;margin:0 0 -6px;letter-spacing:0}
+ .edition .lab-house-tabs{grid-template-columns:1fr 1fr;gap:12px}
+ .edition .lab-house-tabs>.house-choice{position:relative;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:12px;min-height:0;padding:8px 8px 14px;border:1px solid var(--lab-line);border-radius:14px;background:var(--lab-paper);color:var(--lab-ink);text-align:left}
+ .edition .lab-house-tabs>.house-choice>img{width:100%;height:105px;border-radius:8px}
+ .edition .lab-house-tabs>.house-choice>.house-choice-copy{padding:0 4px;gap:6px}
+ .edition .house-choice-copy strong{font-size:19px;letter-spacing:-.5px}
+ .edition .lab-house-tabs>.house-choice em{display:none}
+ .edition .house-choice-state{font-size:11px;margin-top:2px;color:var(--lab-active)}
+ .edition .lab-house-tabs>.house-choice>.house-choice-arrow{position:absolute;right:13px;bottom:12px;width:24px;height:24px;border-color:var(--lab-line);font-size:16px}
+ .edition .lab-house-tabs>.house-choice.active{background:var(--lab-soft);border-color:var(--lab-active);box-shadow:inset 0 0 0 1px var(--lab-active);color:var(--lab-ink)}
+ .edition .house-choice.active .house-choice-state{color:var(--lab-muted)}
+ .edition .lab-house-tabs>.house-choice.active>.house-choice-arrow{background:var(--lab-active);border-color:var(--lab-active);color:var(--lab-paper);font-size:12px}
+}
+@media(max-width:360px){
+ .edition .lab-house-tabs{gap:10px}
+ .edition .lab-house-tabs>.house-choice>img{height:86px}
+ .edition .house-choice-copy strong{font-size:17px}
+ .edition .house-choice-state{font-size:10px}
+ .edition .lab-house-tabs>.house-choice>.house-choice-arrow{width:20px;height:20px;right:10px;bottom:13px}
+}
+@media(prefers-reduced-motion:reduce){.edition .lab-house-tabs>.house-choice{transition:none;transform:none!important}}

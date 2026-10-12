@@ -1,0 +1,85 @@
+/* One place to explore a home and plan a stay. */
+.edition .unified-cabins{position:relative;--lab-paper:#f0e6d4;--lab-ink:#f1efdf;--lab-muted:#becab4;--lab-line:#81927c55;--lab-active:#e4b98f}
+.edition .section-anchor{position:absolute;top:0;scroll-margin-top:110px}
+.edition .unified-cabins [hidden]{display:none!important}
+.edition .unified-cabins .compare-trigger{align-self:end;justify-self:end;color:inherit;border-color:var(--lab-line);font-size:14px;min-height:44px}
+.edition .explorer-search{display:flex;gap:20px;align-items:center;justify-content:space-between;margin:0 0 24px;padding:16px 0;border-block:1px solid var(--lab-line)}
+.edition .explorer-search p{margin:0;color:var(--lab-ink)}
+.edition .explorer-search button{color:var(--lab-active);font-size:13px}
+.edition .lab-booking{margin-top:26px;padding-top:22px;border-top:1px solid var(--lab-line)}
+.edition #lab-booking-spec{color:var(--lab-muted);font-size:13px;line-height:1.6;margin:0 0 14px}
+.edition .lab-price-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.edition .lab-price-row p{margin:0}
+.edition .lab-price-row strong{font-size:32px;font-weight:500;letter-spacing:-1px}
+.edition .lab-price-row p>span,.edition #lab-total{font-size:12px;color:var(--lab-muted)}
+.edition .lab-booking .lab-house-link{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;min-height:54px;background:#f0e6d4;color:#293e32;border:0;border-radius:12px;margin:0;transition:background .2s,transform .2s}
+.edition .lab-booking .lab-house-link>span{color:inherit}
+.edition .lab-booking .lab-house-link:hover{background:#fff5e6;transform:translateY(-2px)}
+.edition .lab-house-tabs>.house-choice:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.edition .unified-cabins .lab-description{min-height:0;margin-top:28px}
+.edition .unified-cabins .lab-description h3{font-size:32px;margin-block:14px}
+.edition .unified-cabins .lab-description h3 br{display:none}
+.edition .unified-cabins .lab-description h3 br:after{content:' '}
+.edition .unified-cabins .lab-description p{max-width:42em}
+/* Editorial photo mosaic on large screens; touch-friendly filmstrip on phones. */
+.edition .gallery-editorial{display:block}
+.edition .gallery-editorial .section-heading{align-items:end;margin-bottom:36px}
+.edition .gallery-intro{font-size:15px;line-height:1.75;color:var(--muted);max-width:300px;margin:0 0 5px}
+.edition .gallery-editorial .filmstrip{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:240px 240px;gap:16px;overflow:visible;padding:0;scrollbar-width:none}
+.edition .gallery-editorial .filmstrip>button{position:relative;display:block;min-width:0;width:100%;height:100%;padding:0;border:0;border-radius:16px;overflow:hidden;isolation:isolate;background:#253c31}
+.edition .gallery-editorial .filmstrip>button:first-child{grid-row:span 2}
+.edition .gallery-editorial .filmstrip img{width:100%;height:100%;object-fit:cover;border-radius:0;filter:saturate(.88);transition:transform .6s,filter .6s}
+.edition .gallery-editorial .filmstrip>button:after{content:'';position:absolute;inset:30% 0 0;background:linear-gradient(transparent,#081912ba);pointer-events:none}
+.edition .gallery-editorial .filmstrip button>span{position:absolute;inset:auto 20px 20px;z-index:1;display:grid;grid-template-columns:1fr 30px;gap:10px;color:#fff8eb;font-size:17px;font-weight:500;line-height:1.35;margin:0;text-shadow:0 1px 8px #14241b55}
+.edition .gallery-editorial .filmstrip small{grid-column:1/-1;font-size:10px;letter-spacing:2px;font-weight:400;opacity:.8}
+.edition .gallery-editorial .filmstrip b{align-self:end;justify-self:end;font-size:25px}
+.edition .gallery-editorial .filmstrip>button:first-child>span{font-size:28px;inset:auto 28px 28px}
+.edition .gallery-editorial .filmstrip>button:focus-visible{outline:3px solid #c87043;outline-offset:4px}
+.edition .gallery-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:20px}
+.edition .gallery-bottom>p{font-size:12px;color:var(--muted);margin:0}
+.edition .gallery-editorial .gallery-controls{display:none}
+@media(hover:hover){.edition .gallery-editorial .filmstrip>button:hover img{transform:scale(1.04);filter:saturate(1)}}
+@media(min-width:801px) and (max-width:1100px){.edition .gallery-editorial .filmstrip{grid-template-rows:200px 200px}.edition .gallery-editorial .filmstrip button>span{font-size:14px;inset:auto 16px 16px}}
+@media(max-width:800px){
+ .edition .unified-cabins{--lab-paper:#f8f5ee;--lab-ink:#293c32;--lab-muted:#697667;--lab-line:#d9ddd0;--lab-soft:#e9ecdf;--lab-active:#a4492b}
+ [data-theme=dark] .edition .unified-cabins{--lab-paper:#18261f;--lab-ink:#f2eddf;--lab-muted:#b2c0ac;--lab-line:#415244;--lab-soft:#26392c;--lab-active:#e6b38e}
+ .edition .unified-cabins .lab-heading{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+ .edition .unified-cabins .compare-trigger{align-self:flex-start;justify-self:auto;font-size:12px;min-height:36px;gap:20px}
+ .edition .lab-booking{order:3;width:100%;margin:0;padding:0;border:0}
+ .edition #lab-booking-spec{font-size:12px;margin:0 0 14px}
+ .edition .lab-price-row{margin-bottom:16px;gap:8px}
+ .edition .lab-price-row strong{font-size:29px}
+ .edition .lab-booking .lab-house-link{background:var(--lab-ink);color:var(--lab-paper);font-size:14px;border-radius:12px}
+ .edition .lab-booking .lab-house-link:hover{background:var(--lab-ink);transform:none}
+ .edition .explorer-search{align-items:flex-start;gap:10px;margin-bottom:20px}
+ .edition .explorer-search button{font-size:11px;white-space:nowrap}
+ .edition .gallery-editorial{padding-block:40px;overflow:visible}
+ .edition .gallery-editorial .section-heading{display:block;margin-bottom:24px}
+ .edition .gallery-editorial .section-heading h2{font-size:36px;line-height:1.12}
+ .edition .gallery-editorial .section-heading .label{display:none}
+ .edition .gallery-intro{font-size:13px;margin-top:16px;max-width:290px;line-height:1.6}
+ .edition .gallery-intro br{display:none}
+ .edition .gallery-editorial .filmstrip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;grid-template-rows:none;margin-right:-20px;padding-right:20px;scroll-padding-right:20px;scrollbar-width:none}
+ .edition .gallery-editorial .filmstrip::-webkit-scrollbar{display:none}
+ .edition .gallery-editorial .filmstrip>button{flex:0 0 88%;height:360px;scroll-snap-align:start;border-radius:14px}
+ .edition .gallery-editorial .filmstrip>button:first-child{grid-row:auto}
+ .edition .gallery-editorial .filmstrip button>span,.edition .gallery-editorial .filmstrip>button:first-child>span{font-size:22px;inset:auto 22px 24px}
+ .edition .gallery-editorial .gallery-controls{display:flex;gap:12px;align-items:center;flex-shrink:0}
+ .edition .gallery-controls button{width:42px;height:42px;font-size:22px;color:var(--ink);border-color:var(--line)}
+ .edition #gallery-counter{font-size:11px;font-variant-numeric:tabular-nums;color:var(--ink)}
+ .edition .gallery-bottom{gap:12px;margin-top:18px}
+ .edition .gallery-bottom>p{font-size:10px;line-height:1.5;max-width:110px}
+}
+@media(max-width:360px){.edition .gallery-editorial .filmstrip>button{height:310px}.edition .gallery-editorial .gallery-controls{gap:8px}.edition .gallery-controls button{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){.edition .gallery-editorial .filmstrip img,.edition .lab-booking .lab-house-link{transition:none}}
+
+.edition .unified-cabins .lab-spec{display:none}
+
+/* The exterior photo opens the selected home, including the chosen dates. */
+.edition a.lab-exterior{display:block;cursor:pointer}
+.edition a.lab-exterior:focus-visible{outline:3px solid #e4b98f;outline-offset:5px}
+.edition .lab-photo-action{position:absolute;right:20px;bottom:20px;z-index:2;display:flex;align-items:center;gap:18px;padding:12px 16px;border:1px solid #fff5;border-radius:30px;background:#173b2cbf;backdrop-filter:blur(12px);color:#fff8eb;font-size:12px;transition:background .2s}
+.edition .lab-photo-action>span{font-size:20px}
+.edition a.lab-exterior:hover .lab-photo-action{background:#173b2c}
+@media(max-width:800px){.edition a.lab-exterior .lab-photo-note{display:none}.edition .lab-photo-action{right:14px;bottom:14px;padding:10px 14px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.edition .lab-photo-action{transition:none}}
